@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <section class="order">
+      <div class="container">
+        <div class="order__logo">
+          <a href="#">
+            <img src="./img/Logo.png" alt="Logo" />
+          </a>
+        </div>
+        <section class="block__1">
+          <div class="block__1-text">
+            <h1 id="heading">Get your free account</h1>
+            <span id="description">
+              Try homeWorks BUSINESS free for 15 days. Downgrade to Basic (Free
+              Forever) anytime.
+            </span>
+          </div>
+          <div class="block__order">
+            <label
+              for="fullname"
+              class="block__order-optiontext"
+              id="fullNameLabel"
+            >
+              Full Name
+              <input type="text" class="base-input" id="fullname" />
+              <div class="fullname-error error" id="fullname-error">
+                Имя может содержать только буквы и пробел!
+              </div>
+            </label>
+            <label
+              for="username"
+              class="block__order-optiontext"
+              id="usernameLabel"
+            >
+              Your username
+              <input type="text" class="base-input" id="username" />
+              <div class="username-error error" id="username-error">
+                Имя пользователя может содержать только буквы, цифры, символ
+                подчеркивания и тире!
+              </div>
+            </label>
+            <label for="email" class="block__order-optiontext" id="emailLabel">
+              <span>E-mail</span>
+              <input type="email" class="base-input" id="email" />
+              <div class="email-error error" id="email-error">
+                Введите корректный E-mail!
+                <br />
+                Например: your_email@gmail.com
+              </div>
+            </label>
+            <label
+              for="password"
+              class="block__order-optiontext"
+              id="passwordLabel"
+            >
+              Password
+              <input type="password" class="base-input" id="password" />
+              <div class="password-error error" id="password-error">
+                Поле пароля должно содержать минимум 8 символов, среди которых
+                есть:
+                <br />
+                - хотя бы одна буква в верхнем регистре
+                <br />
+                - хотя бы одна цифра
+                <br />
+                - хотя бы один спецсимвол
+              </div>
+            </label>
+            <label
+              for="repeatpassword"
+              class="block__order-optiontext"
+              id="repeatPasswordLabel"
+            >
+              Repeat password
+              <input type="password" class="base-input" id="repeatpassword" />
+              <div class="repeatpassword-error error" id="repeatpassword-error">
+                Пароли не совпадают!
+              </div>
+            </label>
+            <label
+              for="checkbox"
+              class="block__order-checkbox"
+              id="checkboxLabel"
+            >
+              <input type="checkbox" required id="checkbox" />
+              Agree to our Terms of Service and Privacy Statement
+              <div class="checkbox-error error" id="checkbox-error">
+                Пожалуйста, согласитесь с нашими условиями использования и
+                политикой конфиденциальности!
+              </div>
+            </label>
+            <div class="block__order-button" id="signup">
+              <button class="base-button" id="changeButton" type="submit">
+                Sign Up
+              </button>
+            </div>
+            <div class="block_order-why">
+              <a href="#" class="base-link" id="link-login"
+                >Already have an account?</a
+              >
+            </div>
+          </div>
+        </section>
+        <section class="block__2">
+          <img src="./img/image.png" alt="rocket" />
+        </section>
+      </div>
+    </section>
+    <div class="wrapper" id="wrapper">
+      <div class="modal">
+        <div class="modal-close" id="close">X</div>
+        <span
+          >На вашу почту выслана ссылка, перейдите по ней, чтобы завершить
+          регистрацию!</span
+        >
+        <button class="base-button" id="modal-button">Ok</button>
+      </div>
+    </div>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>

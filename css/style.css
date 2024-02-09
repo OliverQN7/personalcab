@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: Nunito;
+  src: url(../fonts/Nunitoregular.woff);
+}
+.container {
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+}
+.order {
+  display: flex;
+}
+.order__logo {
+  position: absolute;
+  top: 27px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.order__logo a {
+  position: relative;
+  left: -3px;
+}
+.block__1 {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 194px 41px 191px 423px;
+  background-color: #fffffb;
+}
+.block__1-text h1 {
+  color: #000;
+  font-family: Nunito, sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+.block__1-text span {
+  color: #636363;
+  font-family: Nunito, sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+}
+.block__1-text {
+  margin-bottom: 42px;
+}
+.block__order-optiontext {
+  color: #c6c6c4;
+  font-family: Nunito, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+.base-input {
+  display: flex;
+  flex-wrap: wrap;
+  color: #323232;
+  font-family: Nunito, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  border: none;
+  border-bottom: 1px solid #c6c6c4;
+  margin: 5px 0 10px 0;
+  width: 100%;
+  background-color: #fffffb;
+}
+.base-input::placeholder {
+  color: #323232;
+  font-family: Nunito, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+.fullname-error,
+.username-error,
+.email-error,
+.password-error,
+.repeatpassword-error,
+.checkbox-error {
+  display: none;
+}
+.error {
+  font-family: Nunito, sans-serif;
+  margin-bottom: 10px;
+  color: red;
+}
+.block__order-checkbox {
+  color: #636363;
+  font-family: Nunito, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
+.block__order-checkbox input {
+  background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.block__order-button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 40px 0 44px 0;
+}
+.base-button {
+  justify-content: center;
+  align-items: center;
+  padding: 21px 68px 25px 68px;
+  border: none;
+  border-radius: 40px;
+  background: #dd3142;
+  color: #fff;
+  font-family: Nunito;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.block_order-why {
+  display: flex;
+  justify-content: center;
+}
+.base-link {
+  color: #636363;
+  font-family: Nunito, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
+.block__2 {
+  background: #f8f8fa;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 254px 406px 331px 11px;
+}
+.wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.modal {
+  width: 500px;
+  height: 200px;
+  background-color: white;
+  border-radius: 20px;
+  font-size: 20px;
+  font-family: Nunito, sans-serif;
+  font-weight: 700;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+}
+.modal span {
+  position: absolute;
+  max-width: 500px;
+  top: 60px;
+  left: 20px;
+}
+.modal-close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+}
+.modal button {
+  position: absolute;
+  top: 130px;
+  left: 195px;
+}
